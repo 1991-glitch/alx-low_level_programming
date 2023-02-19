@@ -3,7 +3,14 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/*
+ * main- entry point
+ *
+ * description ;1-last_digit.c
+ *
+ * Return: Always 0 (sucess)
+ *
+ */
 int main(void)
 {
 	int n;
