@@ -7,12 +7,10 @@
  */
 int main(void)
 {
-	int c = '0';
+	int c = 0;
 
-	for (c = '0'; c <= '9'; c++)
-	{
-	putchar (0);
-	}
+	for (c = 0; c <= 9; c++)
+	putchar ((c % 10) + '0');
 	putchar ('\n');
 	return (0);
 }
