@@ -1,16 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/*
- * main- entry point
+/**
+ * main - Entry point
  *
- * description ;1-last_digit.c
- *
- * Return: Always 0 (sucess)
- *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int n;
