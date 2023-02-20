@@ -11,10 +11,10 @@ int main(void)
 	char y;
 
 	for (c = '0'; c <= '9'; c++)
-		putchar (0);
+		putchar (c);
 
 	for (y = 'a'; y <= 'f'; y++)
-		putchar (0);
+		putchar (y);
 
 	putchar ('\n');
 
