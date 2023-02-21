@@ -1,4 +1,11 @@
+#include <stdio.h>
 #include "main.h"
+
+/**
+ *
+ * main - print putchar
+ * Return: always zero
+ */
 
 int main(void)
 {
@@ -10,5 +17,6 @@ int main(void)
 	putchar('h');
 	putchar('a');
 	putchar('r');
+	putchar('\n');
 	return (0);
 }
