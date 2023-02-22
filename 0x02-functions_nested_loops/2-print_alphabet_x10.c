@@ -1,24 +1,19 @@
-#include <unistd.h>
-/*
- * File: 2-print_alphabet_x10.c
- * Return o always
- */
-
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Prints 10 times the alphabet, in lowercase.
+ *print_alphabet -x10-prints alphabet 10 times
+ *Return:always return 0
  */
 void print_alphabet_x10(void)
 {
-	int c = 0;
-	char letter;
-
-	while (c++ <= 9)
+	char i;
+	char h;
+	for(h = 0;h <= 9; h++)
 	{
-		for (letter = 'a'; letter <= 'z'; letter++)
-			putchar(letter);
-		putchar('\n');
+		for(i = 'a';i <= 'z';i++)
+	{
+	_putchar(i);
+	}
+	_putchar('\n');
 	}
 }
-
