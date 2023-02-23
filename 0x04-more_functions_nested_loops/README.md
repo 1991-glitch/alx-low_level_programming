@@ -1,1 +1,1 @@
-a function that checks for uppercase character
+a function that prints the numbers
