@@ -1,23 +1,17 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * rev_string - a function that reverses the string
+ * main - check the code
  *
- * @s: pointer to the string
+ * Return: Always 0.
  */
-void rev_string(char *s)
+int main(void)
 {
+char s[10] = "My School";
 
-int len, i;
-len = 0;
-
-while (str[len] != '\0')
-{
-len++;
-}
-for (i = 0; i < len; i += 2)
-{
-_putchar(str[i]);
-}
-_putchar('\n');
+printf("%s\n", s);
+rev_string(s);
+printf("%s\n", s);
+return (0);
 }
