@@ -1,1 +1,1 @@
-strncpy
+_strcmp
