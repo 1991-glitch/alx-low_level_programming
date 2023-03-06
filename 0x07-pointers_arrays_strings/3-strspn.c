@@ -1,23 +1,29 @@
 #include "main.h"
 
 /**
- * _strchr - function locates a character in a string
- *
- * @s: The string to be scanned
- * @c: The character to be scanned
- *
- * Return: First occurence of the character c and
- *      Null if character is found.
+ * _strspn - gets the length of a prefix substring
+ * @s: the string
+ * @accept: input
+ * Return: success
  */
-char *_strchr(char *s, char c)
+
+unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0;
-
-	for (; s[i] >= '\0'; i++)
-	{
-		if (s[i] == c)
-			return (&s[i]);
-	}
-	return (0);
+unsigned int n = 0;
+int r;
+while (*s)
+{
+for (r = 0; accept[r]; r++)
+{
+if (*s == accept[r])
+{
+n++;
+break;
 }
-
+else if (accept[r+1] == '\0')
+return (n);
+}
+s++;
+}
+return (n);
+}
