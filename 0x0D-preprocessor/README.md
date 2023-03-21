@@ -1,1 +1,1 @@
-a function-like macro ABS(x) that computes the absolute value of a number x
+ header file that defines a macro named SIZE as an abbreviation for the token 1024
