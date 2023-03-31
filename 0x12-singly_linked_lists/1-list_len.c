@@ -9,13 +9,15 @@
  *
  * Return: number of elements
  */
-size_t list_len(const list_t *h);
+size_t list_len(const list_t *h)
 {
 	size_t n_node;
-	
-	h = h->str;
+	n_node = 0;
+
 	while (h != NULL)
-		h->str = h-> next;
-			n_node++;
-			return (n_node);
+	{
+		n_node++;
+		h = h->next;
+	}
+	return (n_node);
 }
