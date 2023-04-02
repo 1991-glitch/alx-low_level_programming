@@ -3,9 +3,7 @@
 void __attribute__((constructor)) printb4Main();
 
 /**
- * printb4main - function prints a string before main is executed
- *
- * Return: A string
+ * printb4main - runs before main function is executed
  */
 void __attribute__((constructor)) printb4Main()
 {
