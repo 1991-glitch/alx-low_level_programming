@@ -7,7 +7,7 @@ void __attribute__((constructor)) printb4Main();
  *
  * Return: A string
  */
-void printb4main(void)
+void __attribute__((constructor)) printb4Main()
 {
 	printf("You're beat! and yet, you must allow,");
 	printf("\nI bore my house upon my back!\n");
