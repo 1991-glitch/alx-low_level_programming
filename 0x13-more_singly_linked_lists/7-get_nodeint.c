@@ -9,29 +9,16 @@
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-unsigned int i = 0;
-	listint_t *new, *tmp = *h, *head = *h;
+	unsigned int i;
+	listint_t *new_node = head;
 
-	if (!h)
-		return (NULL);
-	while (head && i < idx)
+	for (i = 0; i < index && new_node != NULL; i++)
 	{
-		tmp = head;
-		head = head->next;
-		i++;
+		new_node = new_node->next;
 	}
-	if (i < idx)
-		return (NULL);
-	new = malloc(sizeof(*new));
-	if (new)
+	if (new_node == NULL)
 	{
-		new->n = n;
-		new->next = head;
-		if (tmp == head)
-			*h = new;
-		else
-			tmp->next = new;
+		return (NULL);
 	}
-
-	return (new);
+	return (new_node);
 }
